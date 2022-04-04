@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="styles.css"/>
     <meta charset="utf-8">
     <title>VGS</title>
   </head>
-  <body>
+  <body> -->
     <!-- <input
       class="inputField"
       type="text"
@@ -17,7 +17,7 @@
         .click()"></input>
     <button type="button" id="button" name="button">Submit</button>
     <ul id='ul'></ul> -->
-    <form id="collect-form">
+    <!-- <form id="collect-form">
       <div id="cc-holder" class="form-field"></div>
       <div id="cc-number" class="form-field"></div>
       <div class="form-field-group">
@@ -30,4 +30,70 @@
     <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.12.0/vgs-collect.js"></script>
     <script src="main.js"></script>
   </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VGS Collect Custom Card Form</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <section
+      id="credit-card-example"
+      class="container py-lg-5 example-container"
+    >
+      <div class="card-success hidden">
+        <i class="fa fa-check"></i>
+        <p>Payment Successful!</p>
+      </div>
+      <div class="form-container">
+        <div class="card-front">
+          <div class="shadow"></div>
+          <div class="image-container">
+            <span class="card-image"> <i class="far fa-credit-card"></i> </span>
+          </div>
+
+          <form id="cc-form">
+            <div id="cc-holder" class="cardholder-container">
+              <label for="cc-holder" class="hidden">Card Holder</label>
+              <span class="field-space"></span>
+            </div>
+            <div id="cc-number" class="card-number-container">
+              <label for="cc-number" class="hidden"> Card Number </label>
+              <span class="field-space"></span>
+            </div>
+
+            <div id="cc-exp" class="exp-container">
+              <label for="cc-exp" class="hidden"> Expiration </label>
+              <span class="field-space"></span>
+            </div>
+            <div id="cc-cvc" class="cvc-container">
+              <label for="cc-cvc" class="hidden"> CVC/CVV</label>
+              <span class="field-space"></span>
+            </div>
+          </form>
+        </div>
+        <div class="card-back"><div class="card-stripe"></div></div>
+
+        <button type="submit" class="card-btn" id="cc-form-submit">
+          Submit <i class="fas fa-arrow-circle-right"></i>
+        </button>
+      </div>
+    </section>
+  </body>
+  <!-- <script src="https://js.verygoodvault.com/vgs-collect/1/vgs-collect-examples.js"></script> -->
+  <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.12.0/vgs-collect.js"></script>
+  <script src="main.js"></script>
 </html>
