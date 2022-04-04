@@ -1,5 +1,4 @@
 const f = window.VGSCollect.create('tntv3bfscmb', 'SANDBOX', () => {});
-// vgsForm.useCname('tntv3bfscmb.sandbox.verygoodproxy.com')
 
 const styles = {
   border: "none",
