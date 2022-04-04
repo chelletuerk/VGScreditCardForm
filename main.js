@@ -55,6 +55,7 @@ document.getElementById("collect-form").addEventListener('submit', (e) => {
   }, (error) => {
     console.log(error);
   });
+  vgsForm.reset()
 });
 
 
